@@ -1,0 +1,8 @@
+
+*/.vs/*
+**/node_modules/*
+*/coverage/*
+**/build/*
+*/dist/*
+*/temp*
+*.ignore
