@@ -20,13 +20,23 @@ If you decide to add more elements to the key "foo", they will be pushed into th
 
 There are several methods that can be passed as arguments to the REPL prompt to perform several actions:
 
-"KEYS": Returns all existing keys from the dictionary.
-"MEMBERS <key>": "Returns all members for a given key from the dictionary.
-"ADD <key> <member>": "To add a new entry into the dictionary.
-"REMOVE <key> <member>": "To remove an entry from the dictionary.
-"REMOVEALL <key>": "To remove all members for a set key from the dictionary.
-"CLEAR": "Empty the dictionary.
-"KEYEXISTS <key>": "Returns true or false based on the presence of the key.
-"MEMBEREXISTS <key> <member>": "Returns true or false based on the presence of the key and member.
-"ALLMEMBERS": "Returns all the members in the dictionary.
-"ITEMS": "Returns all keys and members in the dictionary.
+>"KEYS": Returns all existing keys from the dictionary.
+  
+>"MEMBERS <key>": "Returns all members for a given key from the dictionary.
+  
+>"ADD <key> <member>": "To add a new entry into the dictionary.
+  
+>"REMOVE <key> <member>": "To remove an entry from the dictionary.
+  
+>"REMOVEALL <key>": "To remove all members for a set key from the dictionary.
+  
+>"CLEAR": "Empty the dictionary.
+  
+>"KEYEXISTS <key>": "Returns true or false based on the presence of the key.
+  
+>"MEMBEREXISTS <key> <member>": "Returns true or false based on the presence of the key and member.
+  
+>"ALLMEMBERS": "Returns all the members in the dictionary.
+  
+>"ITEMS": "Returns all keys and members in the dictionary.
+  
