@@ -46,6 +46,7 @@ const fnDictionary = (params) => {
                     break;
                 }   
                 default:
+                    console.log('Function is not supported.');
                     break;        
             }            
         } else if(argumentList.length == 2) {
@@ -58,7 +59,12 @@ const fnDictionary = (params) => {
                     keyExists(dictionary, argumentList[1]);
                     break;
                 }
+                case 'REMOVEALL' : {
+                    removeAll(dictionary, argumentList[1]);
+                    break;
+                }
                 default:
+                    console.log('Function is not supported.');
                     break;
             }            
         } else if(argumentList.length == 3) {
@@ -68,7 +74,12 @@ const fnDictionary = (params) => {
                     addToDictionary(dictionary, argumentList[1], argumentList[2]);
                     break;
                 }
+                case 'REMOVE' : {
+                    removeFromDictionary(dictionary, argumentList[1], argumentList[2]);
+                    break;
+                }
                 default:
+                    console.log('Function is not supported.');
                     break;
             }            
         } else {
