@@ -15,6 +15,7 @@ Example :
 If you decide to add more elements to the key "foo", they will be pushed into the array of Members.
 
 >ADD foo test
+  
 "foo" -> ["bar", "test"]
 
 There are several methods that can be passed as arguments to the REPL prompt to perform several actions:
