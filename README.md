@@ -1,13 +1,13 @@
 # cli-dictionary-app
 
-###### This is a command line application for creating a multi-value (key, member format) in memory dictionary.
-###### This is a REPL(Read-Eval-Print-Loop) kind of application which will take one line of input at a time and provide with an printed output as per the command.
+This is a command line application for creating a multi-value (key, member format) in memory dictionary.
+This is a REPL(Read-Eval-Print-Loop) kind of application which will take one line of input at a time and provide with an printed output as per the command.
 
-### Local Set Up
+## Local Set Up
 
-You will need node.js to run this application in your local. If you do not have node in your set up, please download the latest stable version from https://nodejs.org/en/download/ based on your system configuration.
+You will need node.js to run this application in your local. If you do not have node in your set up, please download the latest stable version from [here](https://nodejs.org/en/download/) based on your system configuration.
 
-If you need to sync this with the git repository, you will also need git (https://git-scm.com/downloads). 
+If you need to sync this with the git repository, you will also need [git](https://git-scm.com/downloads). 
 
 Now that you have node & git, you are pretty much ready.
 
@@ -25,12 +25,17 @@ Now lets install all dependencies for the project and link them for active codin
 
 Open a terminal in the project directory and paste below command.
 
-> cli-dictionary-app
+> `cli-dictionary-app`
+
+or simply
+
+> `cli`
 
 This should kick off the interactive REPL application that will wait for your input. 
 
+```
 **Note** : *You can exit this mode at any time using `Ctrl+C` (twice, just to be sure). If you are really sure and want to save some time, just type `.exit`*
-
+```
 It should list out all the available methods that you can use with this application. You can add more if that sounds fun !!
 
 >**KEYS**: Returns all existing keys from the dictionary.
@@ -69,7 +74,10 @@ If you decide to add more elements to the key "foo", they will be pushed into th
 
 **Testing the Interactive Cli App**
 
-To test the interactive cli application, simple run `npm test` while in the project root folder.  
+To test the interactive cli application, simple go to the project root folder and type this:
+
+`npm run test`
+
 The result should look something like this.
   
 

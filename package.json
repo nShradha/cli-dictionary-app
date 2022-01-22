@@ -4,7 +4,8 @@
   "description": "A CLI app to create a dictionary to store Keys and Values.",
   "main": "src/cli.js",
   "bin": {
-    "cli-dictionary-app": "bin/cli-dictionary-app.js"
+    "cli-dictionary-app": "bin/cli-dictionary-app.js",
+    "cli": "bin/cli-dictionary-app.js"
   },
   "publishConfig": {
     "access": "public"
