@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import repl from 'repl';
-import { addToDictionary , displayKeys, displayMembers, allItems, allMembers, removeAll, removeFromDictionary, clearMethod, keyExists} from './components/dictionary';
+import { addToDictionary , displayKeys, displayMembers, allItems, allMembers, removeAll, removeFromDictionary, clearMethod, keyExists, memberExists} from './components/dictionary';
 
 let dictionary = new Map();
 
@@ -77,6 +77,10 @@ const fnDictionary = (params) => {
                 }
                 case 'REMOVE' : {
                     removeFromDictionary(dictionary, argumentList[1], argumentList[2]);
+                    break;
+                }
+                case 'MEMBEREXISTS' : {
+                    memberExists(dictionary, argumentList[1], argumentList[2]);
                     break;
                 }
                 default:
