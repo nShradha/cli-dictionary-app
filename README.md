@@ -28,7 +28,8 @@ Open a terminal in the project directory and paste below command.
 > cli-dictionary-app
 
 This should kick off the interactive REPL application that will wait for your input. 
-**Note** : You can exit this mode at any time using `Ctrl+C` (twice, just to be sure). If you are really sure and want to save some time, just type `.exit`
+
+**Note** : *You can exit this mode at any time using `Ctrl+C` (twice, just to be sure). If you are really sure and want to save some time, just type `.exit`*
 
 It should list out all the available methods that you can use with this application. You can add more if that sounds fun !!
 
@@ -68,7 +69,12 @@ If you decide to add more elements to the key "foo", they will be pushed into th
 
 **Testing the Interactive Cli App**
 
-To test the interactive cli application, simple run `npm test` while in the project root folder.
+To test the interactive cli application, simple run `npm test` while in the project root folder.  
+The result should look something like this.
+  
+
+![image](https://user-images.githubusercontent.com/20864400/150615786-abd73368-88b8-42b1-885a-38f443213c6a.png)
+
 
 #### Thank You ####
 
