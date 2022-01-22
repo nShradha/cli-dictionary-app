@@ -21,6 +21,12 @@ function availableAppMethods() {
     }
    }   
 
+/**
+ * FnDictionary takes the input parameters as a string.
+ * @param {String} params 
+ * Outputs the logs in the console.
+ */
+
 const fnDictionary = (params) => {
     var argumentList = params.trim().split(' ');
     
@@ -93,12 +99,24 @@ const fnDictionary = (params) => {
     }        
 }
 
-function myEval(cmd, context, filename, callback) {
+/**
+ * This method is a call back function for the REPL prompt function.
+ * @param {any} cmd 
+ * @param {any} context 
+ * @param {any} filename 
+ * @param {Function} callback 
+ *
+ */
+
+function evalFunc(cmd, context, filename, callback) {
      callback(fnDictionary(cmd));
   }
 
+/**
+ * The main method for our application.
+ */
 
 export function cli() {
     availableAppMethods();
-    repl.start({ prompt: '> ', eval: myEval });    
+    repl.start({ prompt: '> ', eval: evalFunc });    
 }
