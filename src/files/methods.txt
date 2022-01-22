@@ -1,6 +1,5 @@
 Please use below available methods/functions that this application supports.
 
-
 "KEYS": Returns all existing keys from the dictionary.
 "MEMBERS <key>": "Returns all members for a given key from the dictionary.
 "ADD <key> <member>": "To add a new entry into the dictionary.

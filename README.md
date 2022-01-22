@@ -32,19 +32,19 @@ This should kick off the interactive REPL application that will wait for your in
 
 It should list out all the available methods that you can use with this application. You can add more if that sounds fun !!
 
->"KEYS": Returns all existing keys from the dictionary.
+>**KEYS**: Returns all existing keys from the dictionary.
   
->"MEMBERS <key>": "Returns all members for a given key from the dictionary.
+>**MEMBERS <key>**: "Returns all members for a given key from the dictionary.
   
->"ADD <key> <member>": "To add a new entry into the dictionary.
+>**ADD <key> <member>**: "To add a new entry into the dictionary.
   
->"REMOVE <key> <member>": "To remove an entry from the dictionary.
+>**REMOVE <key> <member>**: "To remove an entry from the dictionary.
   
->"REMOVEALL <key>": "To remove all members for a set key from the dictionary.
+>**REMOVEALL <key>**: "To remove all members for a set key from the dictionary.
   
->"CLEAR": "Empty the dictionary.
+>**CLEAR**: "Empty the dictionary.
   
->"KEYEXISTS <key>": "Returns true or false based on the presence of the key.
+>**KEYEXISTS <key>**: "Returns true or false based on the presence of the key.
   
 >**MEMBEREXISTS <key> <member>**: "Returns true or false based on the presence of the key and member.
   
