@@ -4,17 +4,18 @@ module.exports = {
      * Method displays all the Keys present in the Dictionary.
      * @param {Map} dictionary 
      */
-
-    
+   
     displayKeys: (dictionary) => {
         if (dictionary.size > 0) {
             let entries = Array.from(dictionary.keys());            
             entries.forEach((entry, idx) => {
                 console.log(idx+1, ') ', entry);
             });
+            return entries.length;
         }
         else {            
-            console.log('Empty Set.');
+            console.log('empty set');
+            return 0;
         }
     },
 
@@ -24,19 +25,22 @@ module.exports = {
      * @param {String} key 
      */
 
-
     displayMembers: (dictionary, key) => {
         if (dictionary.size > 0) {
             let entries = dictionary.get(key);            
-            if(!entries || entries.length == 0)
+            if(!entries || entries.length == 0) {
                 console.log('ERROR, key does not exist.');
-            else 
+                return 0;
+            } else {
                 entries.forEach((entry, idx) => {
                     console.log(idx+1, ') ', entry);
                 })
+                return entries.length;
+            }                
         }
         else {            
             console.log('ERROR, key does not exist.');
+            return 0;
         }
     },
 
@@ -72,7 +76,7 @@ module.exports = {
      */ 
 
     removeFromDictionary: (dictionary, key, value) => {
-        if (dictionary.size > 0 && dictionary.has(key)) {
+        if (dictionary.size > 0 && dictionary.has(key) && value) {
             let entries = dictionary.get(key);
             let memberFound = entries.find(x => x === value);
             if(!memberFound)
@@ -81,13 +85,9 @@ module.exports = {
                 if(entries.length == 1) {
                     dictionary.delete(key);
                 } else {
-                    dictionary.map((member, index)=> {
-                        if(member === value) {
-                            dictionary.set(key, entries.splice(index,1))
-                        }
-                    });
+                    dictionary.set(key, entries.filter(x => x !== value));
                 }
-                console.log('REMOVED')
+                console.log('Removed')
             }               
         }
         else {            
@@ -167,10 +167,12 @@ module.exports = {
             });
             arrMembers.map((value, index) => {
                 console.log(index+1, ') ', value);
-            })
+            });
+            return arrMembers.length;
         } 
         else 
             console.log('empty set');
+            return 0;
     },
 
     /**
@@ -188,9 +190,11 @@ module.exports = {
                     console.log(itr,')', key, ': ', x);
                 });
             }
+            return itr;
         } 
         else 
             console.log('empty set');
+            return 0;
     },
 
 

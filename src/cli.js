@@ -7,17 +7,18 @@ import { addToDictionary , displayKeys, displayMembers, allItems, allMembers, re
 
 let dictionary = new Map();
 
+/**
+ * Method to fetch text file to display at the begining of the app.
+ */
+
 function availableAppMethods() {
     let data = []; 
-    
-  // Display the commands for ease of use.
-  const methodsList = fs.readFileSync(path.resolve(__dirname, "files/methods.txt")).toString(); 
+    const methodsList = fs.readFileSync(path.resolve(__dirname, "files/methods.txt")).toString(); 
             
-        // Split the string and store into array
-        data = methodsList.split('\n');            
-        for (let i = 0; i < data.length; i++) {
-            console.log(data[i]);
-        }
+    data = methodsList.split('\n');            
+    for (let i = 0; i < data.length; i++) {
+        console.log(data[i]);
+    }
    }   
 
 const fnDictionary = (params) => {
@@ -46,7 +47,7 @@ const fnDictionary = (params) => {
                     break;
                 }   
                 default:
-                    console.log('Function is not supported.');
+                    console.log('Please use one of the supported methods only.');
                     break;        
             }            
         } else if(argumentList.length == 2) {
@@ -64,7 +65,7 @@ const fnDictionary = (params) => {
                     break;
                 }
                 default:
-                    console.log('Function is not supported.');
+                    console.log('Please use one of the supported methods only.');
                     break;
             }            
         } else if(argumentList.length == 3) {
@@ -79,11 +80,11 @@ const fnDictionary = (params) => {
                     break;
                 }
                 default:
-                    console.log('Function is not supported.');
+                    console.log('Please use one of the supported methods only.');
                     break;
             }            
         } else {
-    
+            console.log('Please use one of the supported methods only.');
         }
     }        
 }
